@@ -843,8 +843,8 @@ import {MyViewManager} from './my-view-manager';
 const createFragment = viewId =>
   UIManager.dispatchViewManagerCommand(
     viewId,
-    // we are calling the 'create' command
-    UIManager.MyViewManager.Commands.create.toString(),
+    // we are calling the 'create' command,UIManager.MyViewManager.Commands.create.toString()
+    "create",
     [viewId],
   );
 
